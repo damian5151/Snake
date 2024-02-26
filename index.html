@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake</title>
+</head>
+<body>
+<canvas id="canvas" width= "720" height="480"></canvas>
+    <script>
+        let canvas = document.getElementById ('canvas');
+        let ctx = canvas.getContext('2d');
+
+        draw();
+       
+        function draw(){
+
+            ctx.fillStyle = 'black';
+            ctx.fillRect(0,0,canvas.width,canvas.height);
+            ctx.fillStyle = 'white'
+            add(130,170);
+            add(160,170);
+            add(160,200);
+
+            ctx.fillStyle = 'lightgreen';
+            add(290,250);
+            add(400,350);
+        }
+        
+        function add(x,y){
+            ctx.fillRect (x,y,29,29)
+        }
+        
+
+        function gameLoop(){
+
+
+
+        }
+
+        
+    </script>
+    
+</body>
+</html>
